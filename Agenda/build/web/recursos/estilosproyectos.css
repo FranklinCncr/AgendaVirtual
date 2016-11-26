@@ -1,0 +1,199 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+}
+nav{
+    margin:0px auto;
+    width:100%;
+    
+}
+nav ul{
+    list-style: none;
+}
+/*Solo para los siguientes de nav*/
+nav > ul{
+    display: table;
+    width:100%;
+    background:rgba(0,0,0,0.8);
+    position:relative;    
+}
+nav > ul li{
+    display: table-cell;
+}
+nav > ul > li > ul{
+    display: none;
+}
+nav > ul li a{
+    color:#fff;
+    display:block;
+    line-height:15px;
+    padding:15px;
+    position:relative;
+    text-align:center;
+    text-decoration:none;
+    /*Animacion*/
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease; 
+}
+nav > ul > li > ul > li a:hover{
+    background: #5da5a2;
+}
+nav > ul > li > a span{
+    background:#174459;
+    display:block;
+    height:100%;
+    width:100%;
+    left:0;
+    position:absolute;
+    top:-42px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+nav > ul > li > a .logo {
+    background: #174459;
+    display: block;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    top: 0px;
+}
+nav > ul > li > a span .icon{
+    display:block;
+    line-height:45px;
+}
+nav > ul > li > a:hover > span{
+    top:0;
+}
+/*Colores de la barra de menu*/
+nav ul li a .logo{
+    background: #ddcc0c; 
+}
+nav ul li a .primero{
+    background: #c8c8c8;   
+}
+nav ul li a .segundo{    
+    background: #93d3f8;
+}
+nav ul li a .tercero{
+    background: #37a4d9;
+}
+nav ul li a .cuarto{
+    background: #02707c;
+}
+nav ul li a .quinto{    
+    background: #01294f;
+}
+
+body{
+    font-family:Calibri;
+	background-image: url(fondo.jpg);
+    background-size: 100vw 100vh;
+	background-attachment: fixed;
+	margin: 0;	
+}
+form{
+    height: 400px;
+    width: 1100px;
+    background-color: rgba(35,30,35,0.7);
+    margin: auto;
+    margin-top: 50px;
+    color: white;
+    font-size: 15px;
+    padding: 20px 20px;
+    padding-top: 0px;
+}
+#txtid{
+    display: none;    
+}
+
+#txthorafin, #txthorainicio{
+    background-color: rgba(240,240,240,0.85);
+    color: #01294f;
+    width: 180px;
+    margin:8px ;
+    margin-left: 10px;
+}
+#txtfecha{
+    background-color: rgba(240,240,240,0.85);
+    color: #01294f;
+    width: 210px;
+    margin:8px ;
+    margin-left: 10px;
+}
+#txttitulo{
+    
+    background-color: rgba(240,240,240,0.85);
+    color: #01294f;
+    width: 470px;
+    margin:8px ;
+    margin-left: 10px;
+}
+#txtparticipantes{
+    background-color: rgba(240,240,240,0.85);
+    color: #01294f;
+    width: 425px;
+    margin:8px ;
+    margin-left: 10px;
+}
+#txtlugar{
+    
+    background-color: rgba(240,240,240,0.85);
+    color: #01294f;
+    width: 475px;
+    margin:8px ;
+    margin-left: 10px;
+}
+#txttipo{
+    
+    background-color: rgba(240,240,240,0.85);
+    color: #01294f;
+    width: 480px;
+    margin:8px ;
+    margin-left: 10px;
+}
+
+textarea{
+    margin: 18px 18px;
+    background-color: rgba(240,240,240,0.85);
+    color: #01294f;
+}
+#btnp{
+    width: 200px;
+    height: 20px; 
+    float:right;
+    margin-right: 50px;
+    border: none;
+    background-color: #ddcc0c;
+}
+#btnc{
+    width: 200px;
+    height: 20px; 
+    float:right;
+    margin-right: 50px;
+    border: none;
+    background-color: #ddcc0c;
+}
+#txtproyecto{
+    margin: 0px -20px;
+    margin-bottom: 10px;
+    height: 40px;
+    width: 1140px;
+    background-color: #ddcc0c;
+    border:none;
+    text-align: center;    
+}
+text{
+    margin: 10px;
+}
